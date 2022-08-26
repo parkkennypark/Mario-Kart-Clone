@@ -11,6 +11,7 @@ public class KartController : MonoBehaviour
 
     [Header("References")]
     public Transform model;
+    public Transform person;
     public Transform slopeRotator;
     public Tire[] frontTires;
     public Tire[] backTires;
@@ -28,6 +29,8 @@ public class KartController : MonoBehaviour
     public float rotationalAcceleration = 6;
     public float rotationalDeceleration = 5;
     public float topTurnSpeed = 5;
+    [Space]
+    public float jumpVelocity = 10;
 
     [Header("Drifting Properties")]
     public float driftSpeedThreshold;
@@ -38,6 +41,7 @@ public class KartController : MonoBehaviour
     public float[] driftSpeedMultipliers;
     public float driftAmountAdd = 1.1f;
     public float driftAmountMult = 0.7f;
+    public float driftInitialBounceAmt = 1;
 
     [Space]
     [Header("Model Properties")]
@@ -45,6 +49,7 @@ public class KartController : MonoBehaviour
     public float yRotationAmount = 8;
     public float zRotationAmount = 2;
     public float modelRotationSpeed = 8;
+    public float personRotateAmount = 15;
 
     private Rigidbody rb;
 
@@ -61,6 +66,7 @@ public class KartController : MonoBehaviour
 
     private float currentSpeedMult = 1;
 
+    private bool driftTriggerIsDown;
 
     void Start()
     {
@@ -71,16 +77,24 @@ public class KartController : MonoBehaviour
     {
         bool meetsSpeedThreshold = currentSpeed > driftSpeedThreshold;
         bool meetsTurnThreshold = Mathf.Abs(currentTurnSpeed) > driftTurnSpeedThreshold;
-        if (!IsDrifting() && (Input.GetButtonDown("Drift") || Input.GetAxis("Drift") > 0))
+        if (IsGrounded() && (Input.GetButtonDown("Drift") || (Input.GetAxis("Drift") > 0 && !driftTriggerIsDown)))
         {
-            if (meetsSpeedThreshold && meetsTurnThreshold)
+            driftTriggerIsDown = true;
+            DoDriftBounce();
+            if (!IsDrifting() && meetsSpeedThreshold && meetsTurnThreshold)
                 StartDrift(currentTurnSpeed < 0 ? DriftMode.LEFT : DriftMode.RIGHT);
         }
 
-        bool driftInputLifted = Input.GetButtonUp("Drift") || Input.GetAxis("Drift") < 1;
+        bool driftInputLifted = Input.GetButtonUp("Drift") || (Input.GetAxis("Drift") < 1);
         if (IsDrifting() && (driftInputLifted || !meetsSpeedThreshold))
         {
+            driftTriggerIsDown = false;
             EndDrift(!meetsSpeedThreshold);
+        }
+
+        if (Input.GetAxis("Drift") < 1 && driftTriggerIsDown)
+        {
+            driftTriggerIsDown = false;
         }
 
         currentDriftTime += Time.deltaTime;
@@ -122,6 +136,13 @@ public class KartController : MonoBehaviour
         }
 
         currentTurnSpeed = Mathf.MoveTowards(currentTurnSpeed, turning * topTurnSpeed, rotationalAcceleration * Time.deltaTime);
+
+        if (IsGrounded() && Input.GetButtonDown("Jump"))
+        {
+            Vector3 vel = rb.velocity;
+            vel.y += jumpVelocity;
+            rb.velocity = vel;
+        }
     }
 
     void ApplyVelocityAndRotation()
@@ -152,9 +173,12 @@ public class KartController : MonoBehaviour
         // print(relativeVelocity);
 
         float targetXRot = -xRotationAmount * rb.velocity.y;
-        targetXRot = Mathf.Clamp(targetXRot, -80, 80);
+        targetXRot = Mathf.Clamp(targetXRot, -30, 30);
         currentXRotation = Mathf.Lerp(currentXRotation, targetXRot, Time.deltaTime * modelRotationSpeed);
         model.localRotation *= Quaternion.AngleAxis(currentXRotation, Vector3.right);
+
+        Quaternion targetPersonRot = Quaternion.AngleAxis(Input.GetAxis("Horizontal") * personRotateAmount, Vector3.forward);
+        person.localRotation = Quaternion.Slerp(person.localRotation, targetPersonRot, Time.deltaTime * 5);
     }
 
     void RotateToSlope()
@@ -166,7 +190,7 @@ public class KartController : MonoBehaviour
         float dot = 0;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1))
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 1))
         {
             floorNormal = hit.normal;
 
@@ -187,6 +211,18 @@ public class KartController : MonoBehaviour
     float GetSpeedRatio()
     {
         return currentSpeed / topSpeed;
+    }
+
+    void DoDriftBounce()
+    {
+        Vector3 vel = rb.velocity;
+        vel.y = driftInitialBounceAmt;
+        rb.velocity = vel;
+    }
+
+    bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, -transform.up, 0.1f);
     }
 
     void StartDrift(DriftMode driftMode)

@@ -8,6 +8,7 @@ public class Sparks : MonoBehaviour
 
     public Color[] mainColors;
     public Color[] innerColors;
+    public ParticleSystem particleSystem;
 
     public float[] scaleAmounts;
     public float scaleSpeed;
@@ -24,12 +25,15 @@ public class Sparks : MonoBehaviour
 
         if (level == 0)
         {
+            particleSystem.Stop();
             currentScaleTarget = 0;
             return;
         }
 
+        particleSystem.Play();
         mainSparks.color = mainColors[level - 1];
         innerSparks.color = innerColors[level - 1];
+        particleSystem.startColor = mainColors[level - 1];
 
         currentScaleTarget = scaleAmounts[level - 1];
     }

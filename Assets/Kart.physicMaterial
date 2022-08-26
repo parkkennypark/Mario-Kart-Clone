@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: Kart
   dynamicFriction: 0.6
   staticFriction: 1
-  bounciness: 0.25
+  bounciness: 0.4
   frictionCombine: 0
   bounceCombine: 0
