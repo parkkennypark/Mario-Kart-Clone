@@ -46,6 +46,8 @@ public class KartController : MonoBehaviour
     public float zRotationAmount = 2;
     public float modelRotationSpeed = 8;
 
+    private Rigidbody rb;
+
     private float currentSpeed;
     private float currentTurnSpeed;
     private float currentYRotation;
@@ -55,9 +57,10 @@ public class KartController : MonoBehaviour
     private int currentDriftLevel;
     private float currentDriftTime;
 
+    private Vector3 floorNormal;
+
     private float currentSpeedMult = 1;
 
-    private Rigidbody rb;
 
     void Start()
     {
@@ -94,7 +97,7 @@ public class KartController : MonoBehaviour
 
         DoModelRotations();
 
-        RotateModelToSlope();
+        RotateToSlope();
 
         UpdateTires();
     }
@@ -127,7 +130,7 @@ public class KartController : MonoBehaviour
         vel.y = rb.velocity.y;
         rb.velocity = vel;
 
-        rb.rotation *= Quaternion.Euler(Vector3.up * currentTurnSpeed / 100 * GetSpeedRatio());
+        rb.rotation *= Quaternion.Euler(Vector3.up * currentTurnSpeed * Time.deltaTime * GetSpeedRatio());
 
     }
 
@@ -144,25 +147,41 @@ public class KartController : MonoBehaviour
         model.localRotation *= Quaternion.AngleAxis(rotationRatio * GetSpeedRatio() * zRotationAmount, Vector3.forward);
 
 
+        // float dot = Vector3.Dot(rb.velocity)
+        Vector3 relativeVelocity = slopeRotator.TransformDirection(rb.velocity);
+        // print(relativeVelocity);
+
         float targetXRot = -xRotationAmount * rb.velocity.y;
+        targetXRot = Mathf.Clamp(targetXRot, -80, 80);
         currentXRotation = Mathf.Lerp(currentXRotation, targetXRot, Time.deltaTime * modelRotationSpeed);
         model.localRotation *= Quaternion.AngleAxis(currentXRotation, Vector3.right);
     }
 
-    void RotateModelToSlope()
+    void RotateToSlope()
     {
-        Vector3 normal = Vector3.up;
+        floorNormal = Vector3.up;
+
+        float xRot = 0;
+        float zRot = 0;
+        float dot = 0;
 
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, 1))
         {
-            Debug.DrawRay(transform.position, Vector3.down * hit.distance, Color.yellow);
-            // Debug.Log("Did Hit");
-            print(hit.normal);
-            normal = hit.normal;
+            floorNormal = hit.normal;
+
+            xRot = Vector3.SignedAngle(Vector3.up, floorNormal, transform.right);
+            // zRot = Vector3.SignedAngle(Vector3.up, floorNormal, Vector3.up);
+            dot = Vector3.Dot(transform.forward, floorNormal);
+            print(dot);
+
+            Debug.DrawRay(transform.position, floorNormal, Color.red, Time.deltaTime);
         }
-        slopeRotator.transform.up = normal * Quaternion.Euler(0, transform.eulerAngles.y, 0);
-        // slopeRotator.localRotation = Quaternion.AngleAxis(angle, Vector3.right);
+        Quaternion target = Quaternion.Euler(xRot, 0, -zRot * Mathf.Sign(dot));
+        // Quaternion target = Quaternion.LookRotation(Vector3.Cross(slopeRotator.right, floorNormal));
+        // slopeRotator.rotation = Quaternion.Slerp(slopeRotator.rotation, target, Time.deltaTime * modelRotationSpeed);
+        slopeRotator.localRotation = Quaternion.Slerp(slopeRotator.localRotation, target, Time.deltaTime * modelRotationSpeed);
+        // slopeRotator.transform.up = Quaternion.Euler(0, transform.eulerAngles.y, 0) * normal;
     }
 
     float GetSpeedRatio()
@@ -212,7 +231,7 @@ public class KartController : MonoBehaviour
         foreach (Tire tire in frontTires)
         {
             tire.SetSpeed(currentSpeed);
-            tire.SetTilt(currentTurnSpeed * GetSpeedRatio());
+            tire.SetTilt(currentTurnSpeed / topTurnSpeed * GetSpeedRatio());
         }
 
         foreach (Tire tire in backTires)

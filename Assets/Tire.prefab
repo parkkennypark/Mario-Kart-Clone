@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 8659244115710247166}
-  rotateSpeed: 30
-  tiltAmount: 5
+  rotateSpeed: 70
+  tiltAmount: 15
 --- !u!1 &8659244115710247167
 GameObject:
   m_ObjectHideFlags: 0
