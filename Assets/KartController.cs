@@ -11,6 +11,7 @@ public class KartController : MonoBehaviour
 
     [Header("References")]
     public Transform model;
+    public Transform slopeRotator;
     public Tire[] frontTires;
     public Tire[] backTires;
     public Sparks[] sparks;
@@ -35,6 +36,8 @@ public class KartController : MonoBehaviour
     public float[] driftLevelTimeThresholds;
     public float driftRotationMult = 2;
     public float[] driftSpeedMultipliers;
+    public float driftAmountAdd = 1.1f;
+    public float driftAmountMult = 0.7f;
 
     [Space]
     [Header("Model Properties")]
@@ -85,6 +88,19 @@ public class KartController : MonoBehaviour
 
         currentSpeedMult = Mathf.MoveTowards(currentSpeedMult, 1, Time.deltaTime * speedMultReturnSpeed);
 
+        HandleInput();
+
+        ApplyVelocityAndRotation();
+
+        DoModelRotations();
+
+        RotateModelToSlope();
+
+        UpdateTires();
+    }
+
+    void HandleInput()
+    {
         var accelerating = Input.GetButton("Accelerate");
         var targetSpeed = accelerating ? topSpeed : 0;
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, Time.deltaTime * (accelerating ? acceleration : deceleration));
@@ -98,16 +114,11 @@ public class KartController : MonoBehaviour
         float turning = Input.GetAxis("Horizontal");
         if (IsDrifting())
         {
-            turning += 1.5f * (driftMode == DriftMode.LEFT ? -1 : 1);
+            turning = (turning + (driftMode == DriftMode.LEFT ? -1 : 1)) / 2 * driftAmountMult;
+            turning += (driftAmountAdd * (driftMode == DriftMode.LEFT ? -1 : 1));
         }
 
         currentTurnSpeed = Mathf.MoveTowards(currentTurnSpeed, turning * topTurnSpeed, rotationalAcceleration * Time.deltaTime);
-
-        ApplyVelocityAndRotation();
-
-        DoModelRotations();
-
-        UpdateTires();
     }
 
     void ApplyVelocityAndRotation()
@@ -138,6 +149,22 @@ public class KartController : MonoBehaviour
         model.localRotation *= Quaternion.AngleAxis(currentXRotation, Vector3.right);
     }
 
+    void RotateModelToSlope()
+    {
+        Vector3 normal = Vector3.up;
+
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 1))
+        {
+            Debug.DrawRay(transform.position, Vector3.down * hit.distance, Color.yellow);
+            // Debug.Log("Did Hit");
+            print(hit.normal);
+            normal = hit.normal;
+        }
+        slopeRotator.transform.up = normal * Quaternion.Euler(0, transform.eulerAngles.y, 0);
+        // slopeRotator.localRotation = Quaternion.AngleAxis(angle, Vector3.right);
+    }
+
     float GetSpeedRatio()
     {
         return currentSpeed / topSpeed;
@@ -166,7 +193,6 @@ public class KartController : MonoBehaviour
         currentDriftLevel++;
         UpdateSparks();
     }
-
 
     bool IsDrifting()
     {
