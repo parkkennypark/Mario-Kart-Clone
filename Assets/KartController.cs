@@ -38,6 +38,7 @@ public class KartController : MonoBehaviour
 
     [Space]
     [Header("Model Properties")]
+    public float xRotationAmount = 2;
     public float yRotationAmount = 8;
     public float zRotationAmount = 2;
     public float modelRotationSpeed = 8;
@@ -45,6 +46,7 @@ public class KartController : MonoBehaviour
     private float currentSpeed;
     private float currentTurnSpeed;
     private float currentYRotation;
+    private float currentXRotation;
 
     private DriftMode driftMode;
     private int currentDriftLevel;
@@ -96,7 +98,7 @@ public class KartController : MonoBehaviour
         float turning = Input.GetAxis("Horizontal");
         if (IsDrifting())
         {
-            turning += 2f * (driftMode == DriftMode.LEFT ? -1 : 1);
+            turning += 1.5f * (driftMode == DriftMode.LEFT ? -1 : 1);
         }
 
         currentTurnSpeed = Mathf.MoveTowards(currentTurnSpeed, turning * topTurnSpeed, rotationalAcceleration * Time.deltaTime);
@@ -124,10 +126,16 @@ public class KartController : MonoBehaviour
         // float driftMult = IsDrifting() ? driftRotationMult : 1;
         float driftMult = 1;
 
-        float targetRot = rotationRatio * GetSpeedRatio() * yRotationAmount * driftMult;
-        currentYRotation = Mathf.Lerp(currentYRotation, targetRot, Time.deltaTime * modelRotationSpeed);
+        float targetYRot = rotationRatio * GetSpeedRatio() * yRotationAmount * driftMult;
+        currentYRotation = Mathf.Lerp(currentYRotation, targetYRot, Time.deltaTime * modelRotationSpeed);
         model.localRotation = Quaternion.AngleAxis(currentYRotation, Vector3.up);
+
         model.localRotation *= Quaternion.AngleAxis(rotationRatio * GetSpeedRatio() * zRotationAmount, Vector3.forward);
+
+
+        float targetXRot = -xRotationAmount * rb.velocity.y;
+        currentXRotation = Mathf.Lerp(currentXRotation, targetXRot, Time.deltaTime * modelRotationSpeed);
+        model.localRotation *= Quaternion.AngleAxis(currentXRotation, Vector3.right);
     }
 
     float GetSpeedRatio()
