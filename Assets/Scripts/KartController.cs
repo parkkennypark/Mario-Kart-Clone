@@ -9,10 +9,11 @@ public class KartController : MonoBehaviour
         NONE, LEFT, RIGHT
     }
 
+    const float GRAVITY = -9.8f * 2.5f;
+
     [Header("References")]
     public Transform model;
     public Transform person;
-    public Transform slopeRotator;
     public Tire[] frontTires;
     public Tire[] backTires;
     public Sparks[] sparks;
@@ -31,6 +32,11 @@ public class KartController : MonoBehaviour
     public float topTurnSpeed = 5;
     [Space]
     public float jumpVelocity = 10;
+
+    [Space]
+    [Header("Floor Rotation Properties")]
+    public LayerMask trackLayerMask;
+    public float trackRotationSpeed = 5;
 
     [Header("Drifting Properties")]
     public float driftSpeedThreshold;
@@ -52,6 +58,9 @@ public class KartController : MonoBehaviour
     public float personRotateAmount = 15;
 
     private Rigidbody rb;
+
+    private Vector3 velocity;
+    private Quaternion targetRot;
 
     private float currentSpeed;
     private float currentTurnSpeed;
@@ -75,6 +84,25 @@ public class KartController : MonoBehaviour
 
     void Update()
     {
+        HandleInput();
+
+        if (IsDrifting())
+            CheckDriftLevel();
+
+        // ApplyGravity();
+
+        ApplyVelocityAndRotation();
+
+        DoModelRotations();
+
+        RotateToSlope();
+
+        UpdateTires();
+    }
+
+    void HandleInput()
+    {
+        // DRIFT STUFF
         bool meetsSpeedThreshold = currentSpeed > driftSpeedThreshold;
         bool meetsTurnThreshold = Mathf.Abs(currentTurnSpeed) > driftTurnSpeedThreshold;
         if (IsGrounded() && (Input.GetButtonDown("Drift") || (Input.GetAxis("Drift") > 0 && !driftTriggerIsDown)))
@@ -97,27 +125,7 @@ public class KartController : MonoBehaviour
             driftTriggerIsDown = false;
         }
 
-        currentDriftTime += Time.deltaTime;
-        if (IsDrifting() && currentDriftLevel < driftLevels && currentDriftTime >= driftLevelTimeThresholds[currentDriftLevel - 1])
-        {
-            IncreaseDriftLevel();
-        }
-
-        currentSpeedMult = Mathf.MoveTowards(currentSpeedMult, 1, Time.deltaTime * speedMultReturnSpeed);
-
-        HandleInput();
-
-        ApplyVelocityAndRotation();
-
-        DoModelRotations();
-
-        RotateToSlope();
-
-        UpdateTires();
-    }
-
-    void HandleInput()
-    {
+        // ACCELERATION STUFF
         var accelerating = Input.GetButton("Accelerate");
         var targetSpeed = accelerating ? topSpeed : 0;
         currentSpeed = Mathf.MoveTowards(currentSpeed, targetSpeed, Time.deltaTime * (accelerating ? acceleration : deceleration));
@@ -127,7 +135,7 @@ public class KartController : MonoBehaviour
             currentSpeed = Mathf.MoveTowards(currentSpeed, reverseSpeed, brakingForce * Time.deltaTime);
         }
 
-
+        // STEERING STUFF
         float turning = Input.GetAxis("Horizontal");
         if (IsDrifting())
         {
@@ -137,21 +145,65 @@ public class KartController : MonoBehaviour
 
         currentTurnSpeed = Mathf.MoveTowards(currentTurnSpeed, turning * topTurnSpeed, rotationalAcceleration * Time.deltaTime);
 
+        // JUMPING STUFF
         if (IsGrounded() && Input.GetButtonDown("Jump"))
         {
             Vector3 vel = rb.velocity;
-            vel.y += jumpVelocity;
+            vel += floorNormal * jumpVelocity;
             rb.velocity = vel;
         }
     }
 
+    void CheckDriftLevel()
+    {
+        currentDriftTime += Time.deltaTime;
+        if (currentDriftLevel < driftLevels && currentDriftTime >= driftLevelTimeThresholds[currentDriftLevel - 1])
+        {
+            IncreaseDriftLevel();
+        }
+    }
+
+    void ApplyGravity()
+    {
+        if (IsGrounded())
+        {
+            return;
+        }
+
+        velocity += floorNormal * GRAVITY * Time.deltaTime;
+    }
+
     void ApplyVelocityAndRotation()
     {
-        Vector3 vel = transform.forward * currentSpeed * currentSpeedMult;
-        vel.y = rb.velocity.y;
+        currentSpeedMult = Mathf.MoveTowards(currentSpeedMult, 1, Time.deltaTime * speedMultReturnSpeed);
+
+        Vector3 vel = rb.velocity;
+        vel = transform.InverseTransformVector(vel);
+
+        float cachedY = vel.y;
+        vel = Vector3.forward * currentSpeed * currentSpeedMult;
+        vel.y = cachedY;
+
+        vel = transform.TransformVector(vel);
+
+        // Vector3 vel = transform.forward * currentSpeed * currentSpeedMult;
+
+        if (!IsGrounded())
+            vel += floorNormal * GRAVITY * Time.deltaTime;
+
+        // vel.y = rb.velocity.y;
+
+        print(vel);
         rb.velocity = vel;
 
-        rb.rotation *= Quaternion.Euler(Vector3.up * currentTurnSpeed * Time.deltaTime * GetSpeedRatio());
+        // rb.rotation *= Quaternion.Euler(Vector3.up * currentTurnSpeed * Time.deltaTime * GetSpeedRatio());
+        // targetRot *= Quaternion.Euler(Vector3.up * currentTurnSpeed * Time.deltaTime * GetSpeedRatio());
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, Time.deltaTime * trackRotationSpeed);
+        // transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, Time.deltaTime * trackRotationSpeed);
+        // transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, Time.deltaTime * trackRotationSpeed);
+
+        transform.localRotation *= Quaternion.AngleAxis(currentTurnSpeed * Time.deltaTime * GetSpeedRatio(), Vector3.up);
 
     }
 
@@ -169,10 +221,10 @@ public class KartController : MonoBehaviour
 
 
         // float dot = Vector3.Dot(rb.velocity)
-        Vector3 relativeVelocity = slopeRotator.TransformDirection(rb.velocity);
+        Vector3 relativeVelocity = transform.InverseTransformDirection(rb.velocity);
         // print(relativeVelocity);
 
-        float targetXRot = -xRotationAmount * rb.velocity.y;
+        float targetXRot = -xRotationAmount * Vector3.Dot(floorNormal, rb.velocity);
         targetXRot = Mathf.Clamp(targetXRot, -30, 30);
         currentXRotation = Mathf.Lerp(currentXRotation, targetXRot, Time.deltaTime * modelRotationSpeed);
         model.localRotation *= Quaternion.AngleAxis(currentXRotation, Vector3.right);
@@ -183,38 +235,18 @@ public class KartController : MonoBehaviour
 
     void RotateToSlope()
     {
-        floorNormal = Vector3.up;
-
-        float xRot = 0;
-        float zRot = 0;
-        float dot = 0;
+        // floorNormal = Vector3.up;
+        // targetRot = transform.rotation;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, -transform.up, out hit, 50))
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 50, trackLayerMask))
         {
-            Vector3 lastNormal = floorNormal;
             floorNormal = hit.normal;
 
-            // print(Vector3.SignedAngle(lastNormal, floorNormal,))
+            // Courtesy of runevision from the Unity forums: https://forum.unity.com/threads/quaternion-rotation-along-normal.22727/
+            targetRot = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
 
-            // Quaternion diff = Quaternion.FromToRotation(lastNormal, floorNormal);
-            // print(diff.eulerAngles);
-            // transform.rotation *= diff;
-
-            transform.rotation = Quaternion.LookRotation(Vector3.Cross(transform.right, hit.normal));
-
-
-            xRot = Vector3.SignedAngle(Vector3.up, floorNormal, transform.right);
-            // zRot = Vector3.SignedAngle(Vector3.up, floorNormal, Vector3.up);
-            dot = Vector3.Dot(transform.forward, floorNormal);
-
-            Debug.DrawRay(transform.position, floorNormal, Color.red, Time.deltaTime);
         }
-        Quaternion target = Quaternion.Euler(xRot, 0, -zRot * Mathf.Sign(dot));
-        // Quaternion target = Quaternion.LookRotation(Vector3.Cross(slopeRotator.right, floorNormal));
-        // slopeRotator.rotation = Quaternion.Slerp(slopeRotator.rotation, target, Time.deltaTime * modelRotationSpeed);
-        slopeRotator.localRotation = Quaternion.Slerp(slopeRotator.localRotation, target, Time.deltaTime * modelRotationSpeed);
-        // slopeRotator.transform.up = Quaternion.Euler(0, transform.eulerAngles.y, 0) * normal;
     }
 
     float GetSpeedRatio()
@@ -225,7 +257,7 @@ public class KartController : MonoBehaviour
     void DoDriftBounce()
     {
         Vector3 vel = rb.velocity;
-        vel.y = driftInitialBounceAmt;
+        vel += floorNormal * driftInitialBounceAmt;
         rb.velocity = vel;
     }
 

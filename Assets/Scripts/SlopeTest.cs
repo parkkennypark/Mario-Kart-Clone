@@ -21,7 +21,9 @@ public class SlopeTest : MonoBehaviour
             // model.up = hit.normal;
             // model.LookAt(hit.point + hit.normal, Vector3.up);
             // model.Rotate(Vector3.up, rotation, Space.Self);
-            model.rotation = Quaternion.LookRotation(Vector3.Cross(transform.right, hit.normal));
+            // model.rotation = Quaternion.LookRotation(Vector3.Cross(transform.right, hit.normal));
+
+            transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
             // model.rotation = Quaternion.LookRotation(Vector3.Cross(model.forward, hit.normal));
 
             // float xRot = Vector3.SignedAngle(Vector3.up, hit.normal, transform.right);
