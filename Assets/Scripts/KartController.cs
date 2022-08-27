@@ -190,14 +190,23 @@ public class KartController : MonoBehaviour
         float dot = 0;
 
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, -transform.up, out hit, 1))
+        if (Physics.Raycast(transform.position, -transform.up, out hit, 50))
         {
+            Vector3 lastNormal = floorNormal;
             floorNormal = hit.normal;
+
+            // print(Vector3.SignedAngle(lastNormal, floorNormal,))
+
+            // Quaternion diff = Quaternion.FromToRotation(lastNormal, floorNormal);
+            // print(diff.eulerAngles);
+            // transform.rotation *= diff;
+
+            transform.rotation = Quaternion.LookRotation(Vector3.Cross(transform.right, hit.normal));
+
 
             xRot = Vector3.SignedAngle(Vector3.up, floorNormal, transform.right);
             // zRot = Vector3.SignedAngle(Vector3.up, floorNormal, Vector3.up);
             dot = Vector3.Dot(transform.forward, floorNormal);
-            print(dot);
 
             Debug.DrawRay(transform.position, floorNormal, Color.red, Time.deltaTime);
         }
