@@ -17,6 +17,9 @@ public class KartController : MonoBehaviour
     public Tire[] frontTires;
     public Tire[] backTires;
     public Sparks[] sparks;
+
+    public UnityEngine.UI.Image groundedIndicator;
+
     [Space]
 
     [Header("Kart Properties")]
@@ -98,6 +101,8 @@ public class KartController : MonoBehaviour
         RotateToSlope();
 
         UpdateTires();
+
+        groundedIndicator.color = IsGrounded() ? Color.green : Color.red;
     }
 
     void HandleInput()
@@ -188,7 +193,8 @@ public class KartController : MonoBehaviour
 
         // Vector3 vel = transform.forward * currentSpeed * currentSpeedMult;
 
-        if (!IsGrounded())
+        // if (!IsGrounded())
+        if (true)
             vel += floorNormal * GRAVITY * Time.deltaTime;
 
         // vel.y = rb.velocity.y;
@@ -263,7 +269,7 @@ public class KartController : MonoBehaviour
 
     bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, -transform.up, 0.1f);
+        return Physics.Raycast(transform.position, -transform.up, 0.3f);
     }
 
     void StartDrift(DriftMode driftMode)
