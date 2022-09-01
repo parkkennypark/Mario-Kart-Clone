@@ -94,6 +94,11 @@ public class KartController : MonoBehaviour
 
         // ApplyGravity();
 
+        if (Input.GetButtonDown("Drift"))
+        {
+            TryRampBoost();
+        }
+
         ApplyVelocityAndRotation();
 
         DoModelRotations();
@@ -199,7 +204,6 @@ public class KartController : MonoBehaviour
 
         // vel.y = rb.velocity.y;
 
-        print(vel);
         rb.velocity = vel;
 
         // rb.rotation *= Quaternion.Euler(Vector3.up * currentTurnSpeed * Time.deltaTime * GetSpeedRatio());
@@ -326,5 +330,25 @@ public class KartController : MonoBehaviour
     public float GetCurrentSpeed()
     {
         return currentSpeed * currentSpeedMult;
+    }
+
+    private void TryRampBoost()
+    {
+        bool successful = true;
+
+        if (successful)
+        {
+            person.GetComponent<Animator>().Play("Jump");
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        SpeedBooster booster = other.GetComponent<SpeedBooster>();
+        if (booster)
+        {
+            currentSpeed = topSpeed;
+            currentSpeedMult = booster.speedMult;
+        }
     }
 }
