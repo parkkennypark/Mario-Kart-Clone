@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: c7cce70740a628c45b4180445cd44975
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_dashboard
+    second: {fileID: 2100000, guid: 8c8c4834c1511354d955210dd27127d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_glideboard
+    second: {fileID: 2100000, guid: 3e90d96b503dfb4419df3720154cf105, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_gravityboard
+    second: {fileID: 2100000, guid: 3a4d9f07687f656438baacd3cd1b4e2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luminous_mat
+    second: {fileID: 2100000, guid: d715efd879aaea643b2b0cbf201f57d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_HolographyMachine
+    second: {fileID: 2100000, guid: 49c128eb8b5eafc4197914009e769615, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_GalleryA
+    second: {fileID: 2100000, guid: 7fcc9373c5c8ad543ba5fc77b70ef281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_GalleryB
+    second: {fileID: 2100000, guid: 3191ab22167f71642bca70da5b3cfadb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_GalleryC
+    second: {fileID: 2100000, guid: d2072847e8ff9de4586aee8a0b39a88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_curbstone00
+    second: {fileID: 2100000, guid: 835e84fb68f1feb44a10cb225926de01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_curbstone_colony
+    second: {fileID: 2100000, guid: 45df5ba59835fc6479c0d641100caaa6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_dirt
+    second: {fileID: 2100000, guid: 00117ae76c57702419a03fd83622cc90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_dirt_colony
+    second: {fileID: 2100000, guid: 6ce895bf81051534389c7ba27a4dc1c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_road
+    second: {fileID: 2100000, guid: 9fd57ec8552c9164ead9d14dd1f1ba7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_road_G
+    second: {fileID: 2100000, guid: 78e15a69fb7c1054c86bf44033933575, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_road_cold_G
+    second: {fileID: 2100000, guid: 1ddc3102f3841ed4d96744082e28c109, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_road_cross
+    second: {fileID: 2100000, guid: 46581277a61fe154786bfbddaf80ffc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_road_warm_G
+    second: {fileID: 2100000, guid: 721554e637792294caa0014a6f61de17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_roadside
+    second: {fileID: 2100000, guid: ccc378715712c4747ba3e0bef1491f1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_roadside_G
+    second: {fileID: 2100000, guid: a746ed75ab912454a91794900ce9bc9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_a_roadside_toG
+    second: {fileID: 2100000, guid: d44ecc49fdb376140b887c0465ac1fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_earth00
+    second: {fileID: 2100000, guid: 9f5c4f842ca81524f8f1a76643b093ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_gardrail01
+    second: {fileID: 2100000, guid: 3d1ce4bab225a0045b4f39292899d67e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_lastcorner
+    second: {fileID: 2100000, guid: 2754625923f09774f9b6f2b1f4d29a83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_lastcorner02
+    second: {fileID: 2100000, guid: 5c4e0ff4f724e8444910548deb774bb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_lastcorner_GrassFloor
+    second: {fileID: 2100000, guid: 6169c1b9b8c24204ca449e6fd20a13ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_seat00
+    second: {fileID: 2100000, guid: 871c489076445264b8f838faa1b68d95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_seat00.002
+    second: {fileID: 2100000, guid: bcad41a6ba62fd6419bcf5b6c8364898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_seat02
+    second: {fileID: 2100000, guid: 12622a1ce3fddcf4990868fad961174d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_seat_glas00
+    second: {fileID: 2100000, guid: 560af76310b8dc2428349d0c0f5ae522, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_start00
+    second: {fileID: 2100000, guid: 71e62e1722dd3fa489936ef40aec71cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_start01
+    second: {fileID: 2100000, guid: 02e8d79d2b924d945bf6202cebd852d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_start_kanban
+    second: {fileID: 2100000, guid: cf047c43b5870da458982f678255d5ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_start_signboard
+    second: {fileID: 2100000, guid: 915e2802cc362384da1ab51515ba79ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_startframe
+    second: {fileID: 2100000, guid: 6732d79ecca85984fb3ccfc2518e0dc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_b_startpanel
+    second: {fileID: 2100000, guid: 9ab04e7a92ffa79449565f7940dc728f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_c_cloud
+    second: {fileID: 2100000, guid: dded4cecb7da75c4eb8d3fac8055a56c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation00
+    second: {fileID: 2100000, guid: 927c50a20dc35f54da297883e41f45a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation00_space
+    second: {fileID: 2100000, guid: 8919ca3e1b99a7244ac14809183f09d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation04
+    second: {fileID: 2100000, guid: 9da57cb58e4115549930eec0f37ad85d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation05
+    second: {fileID: 2100000, guid: 4ff1cee1b20498d4cbb3434bdbf6182b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation06
+    second: {fileID: 2100000, guid: 6e2cba6cfb0f9f8458ddd7964a3575da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation07_space
+    second: {fileID: 2100000, guid: 0a0cc8e19f6cdf242800abe1742f6596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_d_spacestation08
+    second: {fileID: 2100000, guid: 52d533d209399374fb57241e48886b92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap
+    second: {fileID: 2100000, guid: 685e237cad355a44390ef46d65820668, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap1
+    second: {fileID: 2100000, guid: 9bad5ad305ce70a48b93bcf16d3091d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap2
+    second: {fileID: 2100000, guid: 3044af9805b9eb24896e9888f8c63f43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap4
+    second: {fileID: 2100000, guid: 3c261b14803ab7a49b78561494a85fcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap4_2
+    second: {fileID: 2100000, guid: 2ae77854ffe42984da1ffca7c4751d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap4_3
+    second: {fileID: 2100000, guid: 7d184169d1e7c944d80bd317257ea4e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap4_4
+    second: {fileID: 2100000, guid: b312b2bf79f06d64484310c5f30555b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap4_5
+    second: {fileID: 2100000, guid: df320713c521fb34ca7813e9049f08ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rr_lightCubeMap5
+    second: {fileID: 2100000, guid: a9b836dba04b69d43a0df38683539ce2, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

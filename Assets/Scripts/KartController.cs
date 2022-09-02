@@ -53,6 +53,12 @@ public class KartController : MonoBehaviour
     public float driftInitialBounceAmt = 1;
 
     [Space]
+    [Header("Ramp Boost Properties")]
+    public float rampBoostTimeAllowance = 0.1f;
+    public float rampBoostSpeedMultiplier = 1.3f;
+
+
+    [Space]
     [Header("Model Properties")]
     public float xRotationAmount = 2;
     public float yRotationAmount = 8;
@@ -80,6 +86,9 @@ public class KartController : MonoBehaviour
 
     private bool driftTriggerIsDown;
 
+    private float timeSinceLeftGround;
+    private bool groundedLastFrame;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -94,7 +103,14 @@ public class KartController : MonoBehaviour
 
         // ApplyGravity();
 
-        if (Input.GetButtonDown("Drift"))
+        if (groundedLastFrame && !IsGrounded())
+        {
+            timeSinceLeftGround = 0;
+        }
+        timeSinceLeftGround += Time.deltaTime;
+        groundedLastFrame = IsGrounded();
+
+        if (Input.GetButtonDown("Drift") || (Input.GetAxis("Drift") > 0 && !driftTriggerIsDown))
         {
             TryRampBoost();
         }
@@ -334,11 +350,12 @@ public class KartController : MonoBehaviour
 
     private void TryRampBoost()
     {
-        bool successful = true;
+        bool successful = timeSinceLeftGround <= rampBoostTimeAllowance;
 
         if (successful)
         {
-            person.GetComponent<Animator>().Play("Jump");
+            person.GetComponent<Animator>().SetTrigger("Jump");
+            currentSpeedMult = rampBoostSpeedMultiplier;
         }
     }
 

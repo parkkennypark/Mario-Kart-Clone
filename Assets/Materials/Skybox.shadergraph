@@ -1840,7 +1840,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "CellDensity",
     "m_StageCapability": 3,
-    "m_Value": 10.069999694824219,
+    "m_Value": 5.0,
     "m_DefaultValue": 5.0,
     "m_Labels": []
 }
@@ -2194,7 +2194,7 @@
     "m_ShaderOutputName": "B",
     "m_StageCapability": 3,
     "m_Value": {
-        "e00": 11.3100004196167,
+        "e00": 20.600000381469728,
         "e01": 2.0,
         "e02": 2.0,
         "e03": 2.0,

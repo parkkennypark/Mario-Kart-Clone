@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Camera))]
-
 public class KartCamera : MonoBehaviour
 {
     private new Camera camera;
@@ -13,10 +11,15 @@ public class KartCamera : MonoBehaviour
     public float fovSpeedMult = 0.5f;
     public float fovSmoothing = 8;
 
+    public float rotationSmoothing = 5;
+
+    private Quaternion currentRotation;
+
 
     void Start()
     {
-        camera = GetComponent<Camera>();
+        currentRotation = kart.transform.rotation;
+        camera = GetComponentInChildren<Camera>();
         baseFOV = camera.fieldOfView;
     }
 
@@ -28,5 +31,8 @@ public class KartCamera : MonoBehaviour
         float targetFOV = baseFOV * (1 + ratio * fovSpeedMult);
 
         camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, targetFOV, Time.deltaTime * fovSmoothing);
+
+        currentRotation = Quaternion.Slerp(currentRotation, kart.transform.rotation, Time.deltaTime * rotationSmoothing);
+        transform.rotation = currentRotation;
     }
 }
