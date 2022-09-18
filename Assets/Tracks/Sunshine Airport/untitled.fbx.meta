@@ -1,0 +1,531 @@
+fileFormatVersion: 2
+guid: 4026a7f799a02f947b0350a3020f54bb
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: APGuideLight
+    second: {fileID: 2100000, guid: 0e3978f6602d1fe4cb6180545adbf800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: APRef
+    second: {fileID: 2100000, guid: 13352d3e7a640a54f993b55832a12be6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: APRef2
+    second: {fileID: 2100000, guid: d157c44d6a70fa04cb1411fff294f755, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: APShineLogoOrange
+    second: {fileID: 2100000, guid: ea81c23ce20050c4293c5e9b27a19b49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AP_JetA_Tire_1
+    second: {fileID: 2100000, guid: a46c3d48891b2204fa1bbe19676f547c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AP_Kanban_Main
+    second: {fileID: 2100000, guid: 798085ef12cb4cd42a5d87d4a4c26210, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AP_Kusa
+    second: {fileID: 2100000, guid: 771f79af377129045b6bf76b5a5e4e08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ApMado
+    second: {fileID: 2100000, guid: 3fb83f604b2140f419f082154868733f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Add
+    second: {fileID: 2100000, guid: ff3368c38baa6ce4fb2dea6e0b4bd0d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Blue
+    second: {fileID: 2100000, guid: c92fa4ae61fafc5488078e43830923c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Nuki
+    second: {fileID: 2100000, guid: 7562af525be966444a76f96b66954037, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Nuki_Seal
+    second: {fileID: 2100000, guid: b6d68177db35c7145b89cd0263421a6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Pole
+    second: {fileID: 2100000, guid: aadea02524c5ac242bbb94c1b706e9ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Some
+    second: {fileID: 2100000, guid: f0d54c65303a8a14a9ebf309a4134798, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Nuki_Seal1
+    second: {fileID: 2100000, guid: 12d0fe11c6f63b847afca9534d17d414, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Road
+    second: {fileID: 2100000, guid: 15e41eeb7f0286e41a5c830d7e378bd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Some1024
+    second: {fileID: 2100000, guid: 0ccf7a1e379d4834ca22ffb429b9a08b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Some256
+    second: {fileID: 2100000, guid: 59545580a590b05468801c9e00f8a67a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Some512
+    second: {fileID: 2100000, guid: a6228db61b1e9f94b936cf8f5b16cfcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area1_Some512.002
+    second: {fileID: 2100000, guid: eec2a0f56abd2af44b1f40c5a70a82e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area_0_Add_Bake
+    second: {fileID: 2100000, guid: b4ed365cc3c94fb4196f6b15f7fe402e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Asphalt
+    second: {fileID: 2100000, guid: 9e39777b5e7d07245accb6e6362b28dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CargoUpDownSet
+    second: {fileID: 2100000, guid: dfbc84ad493e0484aa85bcd1f0d8b974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DartCray
+    second: {fileID: 2100000, guid: 5697af16e28e06e44a8fa10784f9ec8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dart_Shiba_Mura
+    second: {fileID: 2100000, guid: a9367d3c5d440314490f1ee0b74011d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dart_shiba
+    second: {fileID: 2100000, guid: ac3e4e7d6e5a2e84780187fa9f7eddf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dart_shiba_Deep
+    second: {fileID: 2100000, guid: cec41152fc564e4489c28679911260bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dart_shiba_Tunagi
+    second: {fileID: 2100000, guid: 1383e52d900f5c141b2a2d2a08ced3c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EnkeiSimaArufa
+    second: {fileID: 2100000, guid: 562947d6e28871e4b8075cdf8917d88d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EnkeiSimaMatome
+    second: {fileID: 2100000, guid: 60051495900043d4fabe8fd039ce25aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Enkei_Nuki
+    second: {fileID: 2100000, guid: 796ae5d415570b045a4654450b9c68a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ForestEnkei
+    second: {fileID: 2100000, guid: 8210980e3f3837f429e046fcb1c236be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GaikanBlue
+    second: {fileID: 2100000, guid: d50a00aeb3cd24048a587066fc28f2dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GaikanRed
+    second: {fileID: 2100000, guid: f7cc7d14cbf143348a3482488d6f1c0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GoalGateAnime
+    second: {fileID: 2100000, guid: b479efb7cf532454597b5a2dfad7a867, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InKanbanA
+    second: {fileID: 2100000, guid: 5edfa78a1c20bf24e9930859d41c26ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InWhiteTenjo
+    second: {fileID: 2100000, guid: 902e3eac199f89647a97531be9d53146, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: In_Metal_Gingira
+    second: {fileID: 2100000, guid: c0ba32cb2f4cf3140b4336a6a3ae3545, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetAColorCargo
+    second: {fileID: 2100000, guid: 06a9ead4f0b9eec46b50ef7e9dcfa0af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetAColor_B
+    second: {fileID: 2100000, guid: ad80313497aa5f24d9694819740d5094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetAColor_Y
+    second: {fileID: 2100000, guid: 901dad16721b22b4faeec0d70d1e12ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetB
+    second: {fileID: 2100000, guid: 9a3f2e231b9f3bd45be64a9d28a8c93b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetC
+    second: {fileID: 2100000, guid: 33a013b6a4834a34790c407ed6c20b97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetDanmen
+    second: {fileID: 2100000, guid: 1701971cf5f43e242844b569168e30ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetKinai
+    second: {fileID: 2100000, guid: 36e4b76125bec6a4f9a557b263fafbe6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetLight
+    second: {fileID: 2100000, guid: cc86974f325b0d044b2558ee59dc2333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JetTireFlame
+    second: {fileID: 2100000, guid: 3f51ecadf3abcff49a13060e972175b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KanbanKeiziban
+    second: {fileID: 2100000, guid: aa91caa60a45ec145bdab3b618a108ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KanbanRyokou
+    second: {fileID: 2100000, guid: a8e983afbcfe80447aa0f413d9b03512, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalAsiba
+    second: {fileID: 2100000, guid: 4c1b1bf3c28361f4c95d2b87d4fb12b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalAsibaBatuIro
+    second: {fileID: 2100000, guid: 43f78fdb5b3b2a94fb1a8c98405fdfb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalAsiba_Area2
+    second: {fileID: 2100000, guid: c0594abd56fbe9b4a94a493d6450ee60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalMiddle
+    second: {fileID: 2100000, guid: 5aa0f38b4b01fe046bba5f94d035cac3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Out_Metal_Gingira
+    second: {fileID: 2100000, guid: 5af0ac6a0a324754da9f5b5ecc32eaf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PanelFlame
+    second: {fileID: 2100000, guid: 72adf6db5812a3249b46e8f4936f4ca8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlantA_m
+    second: {fileID: 2100000, guid: b9d5a0ea2e0e92a46a004384f211d53f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoadWing
+    second: {fileID: 2100000, guid: d4dcb5a0f3873ec40b3b579fdc009b1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road_Airport
+    second: {fileID: 2100000, guid: 7cb0af201fa9b2349abf214eeb7acf9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road_AirportSeal
+    second: {fileID: 2100000, guid: 3b967dc2657fa4b4696c9f972024859a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road_Tile
+    second: {fileID: 2100000, guid: d85c1d914f16b6d448927faaa1446e61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road_Wood
+    second: {fileID: 2100000, guid: df42e3c4fc8f7ff499338f8535bd7919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SealApLight
+    second: {fileID: 2100000, guid: 61c5d659a7848314398c5c0aa615c3f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seiteki1
+    second: {fileID: 2100000, guid: 2335fae2ea4e1d94ebf3f3a05e58fbf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seiteki1.001
+    second: {fileID: 2100000, guid: cbae351c483238c41986d32e22adac78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shine_White
+    second: {fileID: 2100000, guid: 784f17c06b690f94ab37af97d99544bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SitunaiHasiraBig
+    second: {fileID: 2100000, guid: 39b2aacb30e8a27469bbcf4a7a5e34f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SitunaiLight
+    second: {fileID: 2100000, guid: 30a6b8492b215744f84ed72b7a321108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SitunaiLight1
+    second: {fileID: 2100000, guid: bcc7baea7a80c964eb2c92679a24fa89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SitunaiWallBase
+    second: {fileID: 2100000, guid: ad5f569fa74733c4087e775b228934aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRoadAmi
+    second: {fileID: 2100000, guid: 8670dcdbb03a59f45bd27e7c8bd0bbf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRoadAmi_Area2
+    second: {fileID: 2100000, guid: da1a8acd40389e5429242a10c64f2aa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRoadEtc
+    second: {fileID: 2100000, guid: f1f10c9ffbd7c5a44b5b4d75e174106f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRoadGrayFlame
+    second: {fileID: 2100000, guid: 592a442f1fa5f2c41819451519b84e8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SkyRoadGrayFlame_Area2
+    second: {fileID: 2100000, guid: 67f3d92c37e4bde429f4a5bc4cf6ee72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SotoKanbanA
+    second: {fileID: 2100000, guid: 7bd74c9c64810a7459e76fa90e97444b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soto_White_01
+    second: {fileID: 2100000, guid: 468ec51995ff01f4b87f1dfd9207e32f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowPika
+    second: {fileID: 2100000, guid: 5c3b42b7d67551649b99318ec4b0328c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowUso
+    second: {fileID: 2100000, guid: 3c04a525336f9cb48b0f924279fbadcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_Dark
+    second: {fileID: 2100000, guid: a931c71a57aaa8c4da075193656d90b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_dashboard
+    second: {fileID: 2100000, guid: 2bbaa1f8b040a3648b5c660b4bf67ce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_glideboard
+    second: {fileID: 2100000, guid: 78f383278230b0a4da9d663766ff1049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_gravityboard
+    second: {fileID: 2100000, guid: debdc32e27aba1b43b8f97fbe5a68a01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_sea05
+    second: {fileID: 2100000, guid: f945d06fccf1d0d46a99361d3ce14cec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_waterline
+    second: {fileID: 2100000, guid: 7882f52949d01134e9de949df3f12047, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fence
+    second: {fileID: 2100000, guid: 5e0b9e465d3839f4a9d104a93d115e9f, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

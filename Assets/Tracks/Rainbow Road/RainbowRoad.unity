@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1710419, g: 0.25292036, b: 0.2482989, a: 1}
+  m_IndirectSpecularColor: {r: 0.17109281, g: 0.25294372, b: 0.24833068, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -635,16 +635,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.611
-      objectReference: {fileID: 0}
-    - target: {fileID: 7634834207660727463, guid: 43c2f00ef324d0e4c8c63e146c663617,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937162583416757609, guid: 43c2f00ef324d0e4c8c63e146c663617,
-        type: 3}
-      propertyPath: rotationSmoothing
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43c2f00ef324d0e4c8c63e146c663617, type: 3}

@@ -1,0 +1,937 @@
+# Blender MTL File: 'None'
+# Material Count: 85
+
+newmtl APGuideLight
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ApguideLight_Alb.png
+map_d ApguideLight_Alb.png
+
+newmtl APRef
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APRef_Alb.png
+map_d APRef_Alb.png
+
+newmtl APRef2
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APRef2_Alb.png
+map_d APRef2_Alb.png
+
+newmtl APShineLogoOrange
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APShineLogoOrange_Alb.png
+map_d APShineLogoOrange_Alb.png
+
+newmtl AP_JetA_Tire_1
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd AP_JetA_Tire_1_Alb.png
+map_d AP_JetA_Tire_1_Alb.png
+
+newmtl AP_Kanban_Main
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd AP_Goalgate_Main_Alb.png
+map_d AP_Goalgate_Main_Alb.png
+
+newmtl AP_Kusa
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd kusa_01_Alb.png
+map_d kusa_01_Alb.png
+
+newmtl ApMado
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Komado_Alb.png
+map_d Komado_Alb.png
+
+newmtl Area0_Add
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Add_Alb.png
+map_d Area0_Add_Alb.png
+
+newmtl Area0_Blue
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Blue_Alb.png
+map_d Area0_Blue_Alb.png
+
+newmtl Area0_Nuki
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Nuki_Alb.png
+map_d Area0_Nuki_Alb.png
+
+newmtl Area0_Nuki_Seal
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Nuki_Seal_Alb.png
+map_d Area0_Nuki_Seal_Alb.png
+
+newmtl Area0_Pole
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Pole_Alb.png
+map_d Area0_Pole_Alb.png
+
+newmtl Area0_Some
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Some_Alb.png
+map_d Area0_Some_Alb.png
+
+newmtl Area1_Nuki_Seal1
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Nuki_Seal1_Alb.png
+map_d Area1_Nuki_Seal1_Alb.png
+
+newmtl Area1_Road
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Road_Alb.png
+map_d Area1_Road_Alb.png
+
+newmtl Area1_Some1024
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Some1024_Alb.png
+map_d Area1_Some1024_Alb.png
+
+newmtl Area1_Some256
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Some_Alb.png
+map_d Area1_Some_Alb.png
+
+newmtl Area1_Some512
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Some512_Alb.png
+map_d Area1_Some512_Alb.png
+
+newmtl Area1_Some512.002
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area1_Some512_Alb.png
+map_d Area1_Some512_Alb.png
+
+newmtl Area_0_Add_Bake
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Area0_Add_Bake_Alb.png
+map_d Area0_Add_Bake_Alb.png
+
+newmtl Asphalt
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Asphalet_1_Alb.png
+map_d Asphalet_1_Alb.png
+
+newmtl CargoUpDownSet
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd CargoUpDownSet_Alb.png
+map_d CargoUpDownSet_Alb.png
+
+newmtl DartCray
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd DartCray01_Alb.png
+map_d DartCray01_Alb.png
+
+newmtl Dart_Shiba_Mura
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Dart_Shiba_Mura_Alb.png
+map_d Dart_Shiba_Mura_Alb.png
+
+newmtl Dart_shiba
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Dart_siba_01_Alb.png
+map_d Dart_siba_01_Alb.png
+
+newmtl Dart_shiba_Deep
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Dart_siba_Deep_01_Alb.png
+map_d Dart_siba_Deep_01_Alb.png
+
+newmtl Dart_shiba_Tunagi
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Dart_siba_Tunagi_Alb.png
+map_d Dart_siba_Tunagi_Alb.png
+
+newmtl EnkeiSimaArufa
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd EnkeiSimaArufa_Alb.png
+map_d EnkeiSimaArufa_Alb.png
+
+newmtl EnkeiSimaMatome
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd EnkeiSimaMatome_Alb.png
+map_d EnkeiSimaMatome_Alb.png
+
+newmtl Enkei_Nuki
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd EnkeiNuki_Alb.png
+map_d EnkeiNuki_Alb.png
+
+newmtl ForestEnkei
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ForestEnkei_Alb.png
+map_d ForestEnkei_Alb.png
+
+newmtl GaikanBlue
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd GaikanBlue_Alb.png
+map_d GaikanBlue_Alb.png
+
+newmtl GaikanRed
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd GaikanRed_Alb.png
+map_d GaikanRed_Alb.png
+
+newmtl GoalGateAnime
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd GoalGateAnime_Alb.png
+map_d GoalGateAnime_Alb.png
+
+newmtl InKanbanA
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd InKanban_Alb.png
+map_d InKanban_Alb.png
+
+newmtl InWhiteTenjo
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd InWhiteTenjo_Alb.png
+map_d InWhiteTenjo_Alb.png
+
+newmtl In_Metal_Gingira
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd In_Metal_Gingira_1_Alb.png
+map_d In_Metal_Gingira_1_Alb.png
+
+newmtl JetAColorCargo
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetAColorCargo_Alb.png
+map_d JetAColorCargo_Alb.png
+
+newmtl JetAColor_B
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetAColor_B_Alb.png
+map_d JetAColor_B_Alb.png
+
+newmtl JetAColor_Y
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetCColor_Y_Alb.png
+map_d JetCColor_Y_Alb.png
+
+newmtl JetB
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetB_All_Alb.png
+map_d JetB_All_Alb.png
+
+newmtl JetC
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetC_All_Alb.png
+map_d JetC_All_Alb.png
+
+newmtl JetDanmen
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetDanmen_Alb.png
+map_d JetDanmen_Alb.png
+
+newmtl JetKinai
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetKinai_Alb.png
+map_d JetKinai_Alb.png
+
+newmtl JetLight
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetLight1_Alb.png
+map_d JetLight1_Alb.png
+
+newmtl JetTireFlame
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd JetTireFlame_Alb.png
+map_d JetTireFlame_Alb.png
+
+newmtl KanbanKeiziban
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd KanbanDenko_Alb.png
+map_d KanbanDenko_Alb.png
+
+newmtl KanbanRyokou
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd KanbanRyokou_Alb.png
+map_d KanbanRyokou_Alb.png
+
+newmtl MetalAsiba
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Metal_Asiba_Alb.png
+map_d Metal_Asiba_Alb.png
+
+newmtl MetalAsibaBatuIro
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd MetalAsibaMaru_Alb.png
+map_d MetalAsibaMaru_Alb.png
+
+newmtl MetalAsiba_Area2
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Metal_Asiba_Alb.png
+map_d Metal_Asiba_Alb.png
+
+newmtl MetalMiddle
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd MetalMiddle_Alb.png
+map_d MetalMiddle_Alb.png
+
+newmtl Out_Metal_Gingira
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APMetalgira_Alb.png
+map_d APMetalgira_Alb.png
+
+newmtl PanelFlame
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd PanelFlame_Alb.png
+map_d PanelFlame_Alb.png
+
+newmtl PlantA_m
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd PlantA_01_Alb.png
+map_d PlantA_01_Alb.png
+
+newmtl RoadWing
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd RoadWing_Alb.png
+map_d RoadWing_Alb.png
+
+newmtl Road_Airport
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Road_Airport_01_Alb.png
+map_d Road_Airport_01_Alb.png
+
+newmtl Road_AirportSeal
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Road_AirportSeal_Alb.png
+map_d Road_AirportSeal_Alb.png
+
+newmtl Road_Tile
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Road_Tile_01_Alb.png
+map_d Road_Tile_01_Alb.png
+
+newmtl Road_Wood
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Road_Wood_01_Alb.png
+map_d Road_Wood_01_Alb.png
+
+newmtl SealApLight
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SealApLight_Alb.png
+map_d SealApLight_Alb.png
+
+newmtl Seiteki1
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Seitekinomi_Alb.png
+map_d Seitekinomi_Alb.png
+
+newmtl Seiteki1.001
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Seitekinomi_Alb.png
+map_d Seitekinomi_Alb.png
+
+newmtl Shine_White
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd AP_shine_white_1_Alb.png
+map_d AP_shine_white_1_Alb.png
+
+newmtl SitunaiHasiraBig
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SitunaiHasiraBig_Alb.png
+map_d SitunaiHasiraBig_Alb.png
+
+newmtl SitunaiLight
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SitunaiLight_Alb.png
+map_d SitunaiLight_Alb.png
+
+newmtl SitunaiLight1
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SitunaiMetal_Alb.png
+map_d SitunaiMetal_Alb.png
+
+newmtl SitunaiWallBase
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APSitunaiWallBase_01_Alb.png
+map_d APSitunaiWallBase_01_Alb.png
+
+newmtl SkyRoadAmi
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SkyRoadAmi_Alb.png
+map_d SkyRoadAmi_Alb.png
+
+newmtl SkyRoadAmi_Area2
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SkyRoadAmi_Alb.png
+map_d SkyRoadAmi_Alb.png
+
+newmtl SkyRoadEtc
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SkyRoadEtc_Alb.png
+map_d SkyRoadEtc_Alb.png
+
+newmtl SkyRoadGrayFlame
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SkyRoadGrayFlame_Alb.png
+map_d SkyRoadGrayFlame_Alb.png
+
+newmtl SkyRoadGrayFlame_Area2
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SkyRoadGrayFlame_Alb.png
+map_d SkyRoadGrayFlame_Alb.png
+
+newmtl SotoKanbanA
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd SotoKanban_Alb.png
+map_d SotoKanban_Alb.png
+
+newmtl Soto_White_01
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Soto_White_1_Alb.png
+map_d Soto_White_1_Alb.png
+
+newmtl WindowPika
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APWindowSuke_01_Alb.png
+map_d APWindowSuke_01_Alb.png
+
+newmtl WindowUso
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd APWindowUso_01_Alb.png
+map_d APWindowUso_01_Alb.png
+
+newmtl Wood_Dark
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd Wood_Dark_Alb.png
+map_d Wood_Dark_Alb.png
+
+newmtl ef_dashboard
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ef_dashboard02_Alb.png
+map_d ef_dashboard02_Alb.png
+
+newmtl ef_glideboard
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ef_glideboard02_Alb.png
+map_d ef_glideboard02_Alb.png
+
+newmtl ef_gravityboard
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ef_GravityPanell_Alb2.png
+map_d ef_GravityPanell_Alb2.png
+
+newmtl ef_sea05
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ef_sea05_Alb.png
+map_d ef_sea05_Alb.png
+
+newmtl ef_waterline
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd ef_waterlineA_Alb.png
+map_d ef_waterlineA_Alb.png
+
+newmtl fence
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd fence_test.png
+map_d fence_test.png
